@@ -1,0 +1,355 @@
+body {
+    background-color: white;
+}
+
+a.segment {
+    border: 2px solid turquoise;
+    border-radius: 5px;
+    background-color: darkseagreen;
+}
+
+.soloImage {
+    position: relative;
+    min-width: 300px;
+    width: 90%;
+    margin: auto;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  min-width: 300px;
+  width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#showcaseItem {
+    border: 4px solid black;
+    border-radius: 5px;
+    background-color: rgb(237, 237, 237);
+    margin-bottom: 25px;
+    padding: 50px;
+}
+
+#showcaseItem > p {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+footer {
+    padding-bottom: 25px;
+}
+
+/*Friends of James Jokers */
+table {
+    border: 3px solid black;
+    width: 85vw;
+    margin: auto;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    text-align: center;
+    margin-top: 40px;
+}
+
+tr, th {
+    border: 3px solid black;
+}
+
+tr > td:nth-child(1) {
+    width: 20%;
+    height: clamp(25vh, 1.5vw, 40vh);
+}
+
+tr > td:nth-child(2) {
+    width: 25%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    vertical-align: middle;
+    height: clamp(25vh, 1.5vw, 40vh);
+}
+
+tr > td:nth-child(3) {
+    width: 40%;
+    text-align: left;
+    vertical-align: middle;
+    height: clamp(25vh, 1.5vw, 40vh);
+}
+
+.common {
+    background-color: dodgerblue;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
+}
+
+.uncommon {
+    background-color: mediumseagreen;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
+}
+
+.illustrious > a, p > .illustrious {
+    background-color: goldenrod;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
+}
+
+.bonus {
+    color: blue;
+}
+
+.addmult {
+    color: red;
+}
+
+.xmult {
+    background-color: red;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
+}
+
+.highlight {
+    color: darkgoldenrod;
+}
+
+.greyed {
+    color: darkgray;
+}
+
+.chance {
+    color: green;
+}
+
+.planet {
+    color: darkcyan;
+}
+
+.spectral {
+    color: darkblue;
+}
+
+.ability {
+    background-color: darkmagenta;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
+}
+
+.joker {
+    display: inline-block;
+    margin: auto 6px;
+    background-image: url("../images/friendsOfJames_JokersSheet.png");
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.joker.salt {
+    width: 213px;
+    height: 285px;
+    background-position: 0 0;
+}
+
+.joker.kerosene {
+    width: 213px;
+    height: 285px;
+    background-position: -213px 0;
+}
+
+.joker.earner {
+    width: 213px;
+    height: 285px;
+    background-position: -426px 0;
+}
+
+.joker.pomegranete {
+    width: 213px;
+    height: 285px;
+    background-position: -639px 0;
+}
+
+.joker.reciept {
+    width: 213px;
+    height: 285px;
+    background-position: -852px 0;
+}
+
+.joker.daredevil {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -285px;
+}
+
+.joker.canvas {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -285px;
+}
+
+.joker.paintcanvas {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -285px;
+}
+
+.joker.stainglass {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -285px;
+}
+
+.joker.deal {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -285px;
+}
+
+.joker.sunk {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -570px;
+}
+
+.joker.arsonist {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -570px;
+}
+
+.joker.aftershock {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -570px;
+}
+
+.joker.planner {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -570px;
+}
+
+.joker.philosopher {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -570px;
+}
+
+.joker.fumes {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -855px;
+}
+
+.joker.cashback {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -855px;
+}
+
+.joker.first {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -855px;
+}
+
+.joker.crash {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -855px;
+}
+
+.joker.ijoker {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -855px;
+}
+
+.joker.tech {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -1140px;
+}
+
+.joker.jestro {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -1140px;
+}
+
+.joker.sandwich {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -1140px;
+}
+
+.joker.cito {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -1140px;
+}
+
+.joker.blockhead {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -1140px;
+}
+
+.joker.void {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -1425px;
+}
+
+.joker.latte {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -1425px;
+}
+
+.joker.solstice {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -1425px;
+}
+
+.joker.keksi {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -1425px;
+}
+
+.joker.moki {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -1425px;
+}
