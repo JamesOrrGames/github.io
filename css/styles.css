@@ -160,7 +160,7 @@ tr > td:nth-child(3) {
     color: darkblue;
 }
 
-.ability {
+.ability, .ability > a {
     background-color: darkmagenta;
     border-radius: 6px 6px 6px 6px;
     color: white;
@@ -175,181 +175,217 @@ tr > td:nth-child(3) {
 }
 
 .joker.salt {
-    width: 213px;
-    height: 285px;
+    width: 142px;
+    height: 190px;
     background-position: 0 0;
 }
 
 .joker.kerosene {
-    width: 213px;
-    height: 285px;
-    background-position: -213px 0;
+    width: 142px;
+    height: 190px;
+    background-position: -142px 0;
 }
 
 .joker.earner {
-    width: 213px;
-    height: 285px;
-    background-position: -426px 0;
+    width: 142px;
+    height: 190px;
+    background-position: -284px 0;
 }
 
 .joker.pomegranete {
-    width: 213px;
-    height: 285px;
-    background-position: -639px 0;
+    width: 142px;
+    height: 190px;
+    background-position: -426px 0;
 }
 
 .joker.reciept {
-    width: 213px;
-    height: 285px;
-    background-position: -852px 0;
+    width: 142px;
+    height: 190px;
+    background-position: -568px 0;
 }
 
 .joker.daredevil {
-    width: 213px;
-    height: 285px;
-    background-position: 0 -285px;
+    width: 142px;
+    height: 190px;
+    background-position: -710px 0;
 }
 
 .joker.canvas {
-    width: 213px;
-    height: 285px;
-    background-position: -213px -285px;
+    width: 142px;
+    height: 190px;
+    background-position: 0 -190px;
 }
 
 .joker.paintcanvas {
-    width: 213px;
-    height: 285px;
-    background-position: -426px -285px;
+    width: 142px;
+    height: 190px;
+    background-position: -142px -190px;
 }
 
-.joker.stainglass {
-    width: 213px;
-    height: 285px;
-    background-position: -639px -285px;
+.joker.callback {
+    width: 142px;
+    height: 190px;
+    background-position: -284px -190px;
 }
 
 .joker.deal {
-    width: 213px;
-    height: 285px;
-    background-position: -852px -285px;
+    width: 142px;
+    height: 190px;
+    background-position: -426px -190px;
 }
 
 .joker.sunk {
-    width: 213px;
-    height: 285px;
-    background-position: 0 -570px;
+    width: 142px;
+    height: 190px;
+    background-position: -568px -190px;
 }
 
 .joker.arsonist {
-    width: 213px;
-    height: 285px;
-    background-position: -213px -570px;
+    width: 142px;
+    height: 190px;
+    background-position: -710px -190px;
 }
 
 .joker.aftershock {
-    width: 213px;
-    height: 285px;
-    background-position: -426px -570px;
+    width: 142px;
+    height: 190px;
+    background-position: 0 -380px;
 }
 
 .joker.planner {
-    width: 213px;
-    height: 285px;
-    background-position: -639px -570px;
+    width: 142px;
+    height: 190px;
+    background-position: -142px -380px;
 }
 
 .joker.philosopher {
-    width: 213px;
-    height: 285px;
-    background-position: -852px -570px;
+    width: 142px;
+    height: 190px;
+    background-position: -284px -380px;
 }
 
 .joker.fumes {
-    width: 213px;
-    height: 285px;
-    background-position: 0 -855px;
+    width: 142px;
+    height: 190px;
+    background-position: -426px -380px;
 }
 
 .joker.cashback {
-    width: 213px;
-    height: 285px;
-    background-position: -213px -855px;
+    width: 142px;
+    height: 190px;
+    background-position: -568px -380px;
 }
 
 .joker.first {
-    width: 213px;
-    height: 285px;
-    background-position: -426px -855px;
+    width: 142px;
+    height: 190px;
+    background-position: -710px -380px;
 }
 
 .joker.crash {
-    width: 213px;
-    height: 285px;
-    background-position: -639px -855px;
+    width: 142px;
+    height: 190px;
+    background-position: 0 -570px;
 }
 
-.joker.ijoker {
-    width: 213px;
-    height: 285px;
-    background-position: -852px -855px;
+.joker.proso {
+    width: 142px;
+    height: 190px;
+    background-position: -142px -570px;
+}
+
+.joker.scratch {
+    width: 142px;
+    height: 190px;
+    background-position: -284px -570px;
+}
+
+.joker.desert {
+    width: 142px;
+    height: 190px;
+    background-position: -426px -570px;
+}
+
+.joker.bird {
+    width: 142px;
+    height: 190px;
+    background-position: -568px -570px;
 }
 
 .joker.tech {
-    width: 213px;
-    height: 285px;
-    background-position: 0 -1140px;
+    width: 142px;
+    height: 190px;
+    background-position: -710px -570px;
 }
 
 .joker.jestro {
-    width: 213px;
-    height: 285px;
-    background-position: -213px -1140px;
+    width: 142px;
+    height: 190px;
+    background-position: 0 -760px;
 }
 
 .joker.sandwich {
-    width: 213px;
-    height: 285px;
-    background-position: -426px -1140px;
+    width: 142px;
+    height: 190px;
+    background-position: -142px -760px;
 }
 
 .joker.cito {
-    width: 213px;
-    height: 285px;
-    background-position: -639px -1140px;
+    width: 142px;
+    height: 190px;
+    background-position: -284px -760px;
 }
 
 .joker.blockhead {
-    width: 213px;
-    height: 285px;
-    background-position: -852px -1140px;
+    width: 142px;
+    height: 190px;
+    background-position: -426px -760px;
 }
 
 .joker.void {
-    width: 213px;
-    height: 285px;
-    background-position: 0 -1425px;
+    width: 142px;
+    height: 190px;
+    background-position: -568px -760px;
 }
 
 .joker.latte {
-    width: 213px;
-    height: 285px;
-    background-position: -213px -1425px;
+    width: 142px;
+    height: 190px;
+    background-position: -710px -760px;
 }
 
 .joker.solstice {
-    width: 213px;
-    height: 285px;
-    background-position: -426px -1425px;
+    width: 142px;
+    height: 190px;
+    background-position: 0 -950px;
 }
 
 .joker.keksi {
-    width: 213px;
-    height: 285px;
-    background-position: -639px -1425px;
+    width: 142px;
+    height: 190px;
+    background-position: -142px -950px;
 }
 
 .joker.moki {
-    width: 213px;
-    height: 285px;
-    background-position: -852px -1425px;
+    width: 142px;
+    height: 190px;
+    background-position: -284px -950px;
+}
+
+.joker.claire {
+    width: 142px;
+    height: 190px;
+    background-position: -426px -950px;
+}
+
+.joker.tytsune {
+    width: 142px;
+    height: 190px;
+    background-position: -568px -950px;
+}
+
+.joker.reiko {
+    width: 142px;
+    height: 190px;
+    background-position: -710px -950px;
 }
