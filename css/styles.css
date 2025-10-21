@@ -70,6 +70,20 @@ img {vertical-align: middle;}
     font-size: 16px;
 }
 
+#contactsContainer {
+    border: 4px solid black;
+    border-radius: 5px;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contactsContainer > .columns > .column > h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
 footer {
     padding-bottom: 25px;
 }
@@ -164,6 +178,32 @@ tr > td:nth-child(3) {
     background-color: darkmagenta;
     border-radius: 6px 6px 6px 6px;
     color: white;
+}
+
+.contact {
+    display: inline-block;
+    margin: auto 6px;
+    background-image: url("../images/contact_sprites.png");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 64px;
+    height: 64px;
+}
+
+.contact.linkedin {
+    background-position: 0 0;
+}
+
+.contact.youtube {
+    background-position: -64px 0;
+}
+
+.contact.github {
+    background-position: -128px 0;
+}
+
+.contact.itch {
+    background-position: -192px 0;
 }
 
 .joker {
