@@ -1,107 +1,146 @@
+/* Body */
 body {
-    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    background-image: url("/images/backgroundAssets/portfolio_side_left.png"), url("/images/backgroundAssets/portfolio_side_right.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    background-attachment: fixed, fixed;
 }
 
-a.segment {
-    border: 2px solid turquoise;
-    border-radius: 5px;
-    background-color: darkseagreen;
+/* Navbar */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  position: sticky;
 }
 
-.soloImage {
-    position: relative;
-    min-width: 300px;
-    width: 90%;
-    margin: auto;
+.topnav > a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 4px 4px 4px;
 }
 
-* {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  min-width: 300px;
-  width: 50%;
-  position: relative;
-  margin: auto;
+.topnav > a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.mySlides {
-    display: none;
+.topnav > a.active {
+  background-color: #ebdb07;
+  color: #333;
+  margin: 4px 4px 4px 4px;
+  font-weight: bolder;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
-  
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+
+.dropdown > .dropbutton {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 4px 4px 4px 4px;
 }
-  
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+
+.dropdown:hover > .dropbutton {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content > a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content > a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover > .dropdown-content {
+  display: block;
 }
 
 #showcaseItem {
     border: 4px solid black;
     border-radius: 5px;
-    background-color: rgb(237, 237, 237);
+    background-color: rgba(237, 237, 237, 0.6);
     margin-bottom: 25px;
-    padding: 50px;
+    padding: 0px 60px 0px 60px;
     margin: 20px auto;
+    width: 70%;
 }
 
 #showcaseItem > p {
     margin-top: 25px;
-    font-size: 16px;
+    font-size: clamp(0.9rem, 1.5vw, 1.4rem);
 }
 
-#contactsContainer {
-    border: 4px solid black;
-    border-radius: 5px;
-    font-size: clamp(16px, 2vw, 32px);
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-#contactsContainer > .columns > .column > h3, #contactsContainer > h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+#showcaseItem > h1 {
+    text-decoration: underline;
     text-align: center;
 }
 
-footer {
-    padding-bottom: 25px;
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 760px) {
+  .column {
+    width: 100%;
+    font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  }
 }
 
 /*Friends of James Jokers */
 table {
-    border: 3px solid black;
+    border: 4px solid black;
     width: 85vw;
     margin: auto;
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+    background-color: rgb(237, 237, 237);
     text-align: center;
     margin-top: 40px;
 }
 
 tr, th {
-    border: 3px solid black;
+    border: 4px solid black;
 }
 
 tr > td:nth-child(1) {
@@ -161,7 +200,7 @@ tr > td:nth-child(3) {
 }
 
 .greyed {
-    color: darkgray;
+    color: grey;
 }
 
 .chance {
@@ -182,252 +221,156 @@ tr > td:nth-child(3) {
     color: white;
 }
 
-.contact {
-    display: inline-block;
-    margin: auto 6px;
-    background-image: url("../images/contact_sprites.png");
-    background-repeat: no-repeat;
-    object-fit: contain;
-    width: 64px;
-    height: 64px;
-}
-
-.contact.linkedin {
-    background-position: 0 0;
-}
-
-.contact.youtube {
-    background-position: -64px 0;
-}
-
-.contact.github {
-    background-position: -128px 0;
-}
-
-.contact.itch {
-    background-position: -192px 0;
-}
-
 .joker {
     display: inline-block;
     margin: auto 6px;
     background-image: url("../images/friendsOfJames_JokersSheet.png");
     background-repeat: no-repeat;
     object-fit: contain;
+    width: 142px;
+    height: 190px;
 }
 
 .joker.salt {
-    width: 142px;
-    height: 190px;
     background-position: 0 0;
 }
 
 .joker.kerosene {
-    width: 142px;
-    height: 190px;
     background-position: -142px 0;
 }
 
 .joker.earner {
-    width: 142px;
-    height: 190px;
     background-position: -284px 0;
 }
 
 .joker.pomegranete {
-    width: 142px;
-    height: 190px;
     background-position: -426px 0;
 }
 
 .joker.reciept {
-    width: 142px;
-    height: 190px;
     background-position: -568px 0;
 }
 
 .joker.daredevil {
-    width: 142px;
-    height: 190px;
     background-position: -710px 0;
 }
 
 .joker.canvas {
-    width: 142px;
-    height: 190px;
     background-position: 0 -190px;
 }
 
 .joker.paintcanvas {
-    width: 142px;
-    height: 190px;
     background-position: -142px -190px;
 }
 
 .joker.callback {
-    width: 142px;
-    height: 190px;
     background-position: -284px -190px;
 }
 
 .joker.deal {
-    width: 142px;
-    height: 190px;
     background-position: -426px -190px;
 }
 
 .joker.sunk {
-    width: 142px;
-    height: 190px;
     background-position: -568px -190px;
 }
 
 .joker.arsonist {
-    width: 142px;
-    height: 190px;
     background-position: -710px -190px;
 }
 
 .joker.aftershock {
-    width: 142px;
-    height: 190px;
     background-position: 0 -380px;
 }
 
 .joker.planner {
-    width: 142px;
-    height: 190px;
     background-position: -142px -380px;
 }
 
 .joker.philosopher {
-    width: 142px;
-    height: 190px;
     background-position: -284px -380px;
 }
 
 .joker.fumes {
-    width: 142px;
-    height: 190px;
     background-position: -426px -380px;
 }
 
 .joker.cashback {
-    width: 142px;
-    height: 190px;
     background-position: -568px -380px;
 }
 
 .joker.first {
-    width: 142px;
-    height: 190px;
     background-position: -710px -380px;
 }
 
 .joker.crash {
-    width: 142px;
-    height: 190px;
     background-position: 0 -570px;
 }
 
 .joker.proso {
-    width: 142px;
-    height: 190px;
     background-position: -142px -570px;
 }
 
 .joker.scratch {
-    width: 142px;
-    height: 190px;
     background-position: -284px -570px;
 }
 
 .joker.desert {
-    width: 142px;
-    height: 190px;
     background-position: -426px -570px;
 }
 
 .joker.bird {
-    width: 142px;
-    height: 190px;
     background-position: -568px -570px;
 }
 
 .joker.tech {
-    width: 142px;
-    height: 190px;
     background-position: -710px -570px;
 }
 
 .joker.jestro {
-    width: 142px;
-    height: 190px;
     background-position: 0 -760px;
 }
 
 .joker.sandwich {
-    width: 142px;
-    height: 190px;
     background-position: -142px -760px;
 }
 
 .joker.cito {
-    width: 142px;
-    height: 190px;
     background-position: -284px -760px;
 }
 
 .joker.blockhead {
-    width: 142px;
-    height: 190px;
     background-position: -426px -760px;
 }
 
 .joker.void {
-    width: 142px;
-    height: 190px;
     background-position: -568px -760px;
 }
 
 .joker.latte {
-    width: 142px;
-    height: 190px;
     background-position: -710px -760px;
 }
 
 .joker.solstice {
-    width: 142px;
-    height: 190px;
     background-position: 0 -950px;
 }
 
 .joker.keksi {
-    width: 142px;
-    height: 190px;
     background-position: -142px -950px;
 }
 
 .joker.moki {
-    width: 142px;
-    height: 190px;
     background-position: -284px -950px;
 }
 
 .joker.claire {
-    width: 142px;
-    height: 190px;
     background-position: -426px -950px;
 }
 
 .joker.tytsune {
-    width: 142px;
-    height: 190px;
     background-position: -568px -950px;
 }
 
 .joker.reiko {
-    width: 142px;
-    height: 190px;
     background-position: -710px -950px;
 }
