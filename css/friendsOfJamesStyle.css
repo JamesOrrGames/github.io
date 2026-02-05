@@ -374,3 +374,27 @@ tr > td:nth-child(3) {
 .joker.reiko {
     background-position: -710px -950px;
 }
+
+.joker.leadpig {
+    background-position: 0px -1140px;
+}
+
+.joker.glasshouses {
+    background-position: -142px -1140px;
+}
+
+.joker.defaultcube {
+    background-position: -284px -1140px;
+}
+
+.joker.financial {
+    background-position: -426px -1140px;
+}
+
+.joker.redacted {
+    background-position: -568px -1140px;
+}
+
+.joker.mockhead {
+    background-position: -710px -1140px;
+}
