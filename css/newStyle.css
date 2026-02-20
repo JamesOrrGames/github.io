@@ -112,6 +112,7 @@ div > h1 {
 .column {
   float: left;
   width: 50%;
+  padding: 5px;
 }
 
 /* Clear floats after the columns */
@@ -121,10 +122,14 @@ div > h1 {
   clear: both;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1150px) {
   .column {
     width: 100%;
     font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  }
+
+  .column > img {
+    float: center;
   }
 }
 
@@ -173,19 +178,26 @@ div > h1 {
 
 .soloImage {
     position: relative;
-    min-width: 300px;
-    width: 90%;
-    margin: auto;
+    width: 100%;
 }
 
 * {box-sizing: border-box}
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 .mySlides6 {display: none}
-img {vertical-align: middle;}
+.slideshow1, .slideshow2, .slideshow3, .slideshow4, .slideshow5, .slideshow6 {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: auto;
+}
+
+.slideshow1 > img, .slideshow2 > img, .slideshow3 > img, .slideshow4 > img, .slideshow5 > img, .slideshow6 > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .prev, .next {
@@ -201,6 +213,7 @@ img {vertical-align: middle;}
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: rgba(35, 35, 35, 0.8);
 }
   
 /* Position the "next button" to the right */
@@ -211,5 +224,5 @@ img {vertical-align: middle;}
   
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(82, 82, 82, 0.8);
 }
